@@ -7,7 +7,9 @@ import org.springframework.stereotype.Service;
 public class SinopsisService {
     @Autowired
     private SinopsisRepository repository;
+
     public SinopsisDTO obtenerSinopsisAleatoria() {
         Sinopsis sinopsis = repository.obtenerSinopsisAleatoria();
-        return new SinopsisDTO(sinopsis.getTitulo(),sinopsis.getFrase(),sinopsis.getPersonaje(),sinopsis.getPoster());
+        return new SinopsisDTO(sinopsis.getTitulo(), sinopsis.getSinopsis(), sinopsis.getPersonaje(), sinopsis.getPoster());
+    }
 }

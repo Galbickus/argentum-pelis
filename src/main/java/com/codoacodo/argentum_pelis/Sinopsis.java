@@ -33,12 +33,12 @@ public class Sinopsis {
         this.titulo = titulo;
     }
 
-    public String getFrase() {
+    public String getSinopsis() {
         return sinopsis;
     }
 
-    public void setFrase(String frase) {
-        this.sinopsis = frase;
+    public void setSinopsis(String sinopsis) {
+        this.sinopsis = sinopsis;
     }
 
     public String getPersonaje() {
