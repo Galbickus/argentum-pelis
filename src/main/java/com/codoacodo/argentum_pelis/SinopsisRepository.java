@@ -1,4 +1,6 @@
 package com.codoacodo.argentum_pelis;
 
-public interface SinopsisRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface SinopsisRepository extends JpaRepository<Sinopsis, Long> {
 }
